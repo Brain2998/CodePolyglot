@@ -15,4 +15,9 @@ public class GithubToolsTest {
         JsonNode rep2=GithubTools.getRandomRepo();
         assertNotEquals(rep1, rep2);
     }
+    @Test
+    public void repoLanguage() throws  IOException{
+        String language=GithubTools.getRepoLanguage("https://api.github.com/repos/Tyler-Anderson/quad-tree/languages");
+        assertEquals(language, "CoffeeScript");
+    }
 }
