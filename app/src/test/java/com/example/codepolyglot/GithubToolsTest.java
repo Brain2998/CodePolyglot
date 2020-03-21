@@ -25,4 +25,9 @@ public class GithubToolsTest {
         String file=GithubTools.getFileByLanguage("https://api.github.com/repos/joecridge/binsync/contents/", "Bash");
         assertEquals(file, "binsync.sh");
     }
+    @Test
+    public void fileContent() throws IOException {
+        String content=GithubTools.getFileContent("https://api.github.com/repos/joecridge/binsync/contents/binsync.sh");
+        assertTrue(content.startsWith("#!/usr/bin/env"));
+    }
 }

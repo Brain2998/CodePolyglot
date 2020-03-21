@@ -3,7 +3,6 @@ package com.example.codepolyglot;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class LanguageTools {
@@ -14,7 +13,7 @@ public class LanguageTools {
             put("AmbientTalk",".at");
             put("Assembly", ".asm");
             put("B", ".b");
-            put("Bash",".sh");
+            put("Shell",".sh");
             put("C", ".c");
             put("C++", ".cpp");
             put("Clojure", ".clj");
