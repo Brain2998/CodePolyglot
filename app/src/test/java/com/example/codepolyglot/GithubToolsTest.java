@@ -20,4 +20,9 @@ public class GithubToolsTest {
         String language=GithubTools.getRepoLanguage("https://api.github.com/repos/Tyler-Anderson/quad-tree/languages");
         assertEquals(language, "CoffeeScript");
     }
+    @Test
+    public void fileLanguage() throws IOException {
+        String file=GithubTools.getFileByLanguage("https://api.github.com/repos/joecridge/binsync/contents/", "Bash");
+        assertEquals(file, "binsync.sh");
+    }
 }
